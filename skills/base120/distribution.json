@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "canonical_repository": "https://github.com/hummbl-io/hummbl-skills",
+  "canonical_revision": "efba9ea9bf7c3a53967302e2b3bc501d4f6f58f8",
+  "canonical_path": "skills/base120",
+  "skill_version": "0.2.0",
+  "distribution_repository": "https://github.com/hummbl-io/agent-skills",
+  "hash_normalization": "UTF-8 text with CRLF normalized to LF",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "c3663678c9b78f37111beb9ee6fb9aa393969aeed530dd3bc3e52a8eccdd976e"
+    },
+    {
+      "path": "hummbl.skill.json",
+      "sha256": "66bf3f85aae9fef153d9cd232c3e230fb5944bd6bc93114e22428e3f195a9cbe"
+    },
+    {
+      "path": "scripts/verify_reference.py",
+      "sha256": "3e6147350f25e922b5ff89b928d7c3b622785f94df66dc5ec06ea7151b877650"
+    },
+    {
+      "path": "references/operators.json",
+      "sha256": "0dc1573448138fda771ecb46d709b14f99dfc1fcec43e2ca5e7492542c1e6ff1"
+    },
+    {
+      "path": "references/canonical-registry.yaml",
+      "sha256": "bebd2fa8557abb64261664c552be74e1417d0c53307dce6385ebf834473135d9"
+    },
+    {
+      "path": "references/pyproject.toml",
+      "sha256": "90a90ae4a408c07ad1918d043687692e4c5ffd112561ce347715d0461f0fbbdb"
+    },
+    {
+      "path": "references/LICENSE",
+      "sha256": "cef0998f3e99b97f942ccf51e0eaf111b46e1fe27803a705ad09de455cc1bbbf"
+    },
+    {
+      "path": "references/LICENSE-MIT",
+      "sha256": "5b43b997d9364d22f80248ca24933404e30c985e626b1f04e718a8edc561cea0"
+    },
+    {
+      "path": "references/LICENSE-APACHE",
+      "sha256": "0085364ced96d0d13fd83c349114ffd0a8671a07d90cf7d8ac64d8f75b8ec4a0"
+    },
+    {
+      "path": "references/NOTICE",
+      "sha256": "be9277a546fcb0a9f3e1129d081759475b2b311bfa2c9aaf92cfb23c5c2b7710"
+    },
+    {
+      "path": "references/source.json",
+      "sha256": "a4510a68367eba08239988713d4cba8c6ee32572458600aca370e9167f5c65df"
+    }
+  ]
+}

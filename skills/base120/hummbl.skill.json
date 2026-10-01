@@ -1,0 +1,64 @@
+{
+  "compatibility": {
+    "class": "portable",
+    "network": "none",
+    "os": [
+      "any"
+    ],
+    "products": [],
+    "providers": [],
+    "required_commands": [],
+    "required_connectors": [],
+    "required_files": [
+      "references/operators.json",
+      "references/source.json"
+    ],
+    "runtimes": [
+      "agent-skills"
+    ]
+  },
+  "export_policy": {
+    "disposition": "allow",
+    "reason": "Offline source-pinned lookup bundle with full registry and optional stdlib verifier.",
+    "targets": [
+      "claude-code",
+      "codex",
+      "openclaw"
+    ]
+  },
+  "governance": {
+    "base120": [],
+    "chains": [],
+    "execution_mode": "advisory",
+    "triggers": [
+      "base120",
+      "reasoning operator lookup"
+    ]
+  },
+  "lifecycle_status": "active",
+  "name": "base120",
+  "provenance": {
+    "derivation": "modified-after-import",
+    "import_date": "2026-08-10",
+    "license": {
+      "expression": "MIT OR Apache-2.0",
+      "files": [
+        "references/LICENSE",
+        "references/LICENSE-MIT",
+        "references/LICENSE-APACHE",
+        "references/NOTICE"
+      ]
+    },
+    "origin_kind": "imported",
+    "original_version": "0.1.0",
+    "source_snapshot": {
+      "path": "skills/base120/SKILL.md",
+      "repository": "https://github.com/hummbl-io/hummbl-skills",
+      "revision": "f5932d45d040a33a5a29eae24b30d54a7c179ddc",
+      "skill_sha256": "cc5da95d78cda63d08ed31f33654bf1b7408a5dc26f0901bbe5d5c733dbf97a1"
+    },
+    "source_surface": "canonical"
+  },
+  "schema_version": "1.0",
+  "version": "0.2.0"
+}

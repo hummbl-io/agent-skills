@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "repository": "https://github.com/hummbl-io/base120",
+  "revision": "8900d4d229da82974e9cca4dd1537d62b27c699a",
+  "sdk_version": "3.0.0",
+  "hash_normalization": "UTF-8 text with CRLF normalized to LF",
+  "files": [
+    {
+      "upstream_path": "base120/data/operators.json",
+      "bundle_path": "references/operators.json",
+      "git_blob_sha1": "107b8df3cbbd9be498c68ad614da54e87f905d80",
+      "sha256": "0dc1573448138fda771ecb46d709b14f99dfc1fcec43e2ca5e7492542c1e6ff1",
+      "url": "https://github.com/hummbl-io/base120/blob/8900d4d229da82974e9cca4dd1537d62b27c699a/base120/data/operators.json"
+    },
+    {
+      "upstream_path": "Base120_Canonical_Model_Registry.yaml",
+      "bundle_path": "references/canonical-registry.yaml",
+      "git_blob_sha1": "5c2634e2fff76ccd6e6d5b7ca54d680e6750c7a0",
+      "sha256": "bebd2fa8557abb64261664c552be74e1417d0c53307dce6385ebf834473135d9",
+      "url": "https://github.com/hummbl-io/base120/blob/8900d4d229da82974e9cca4dd1537d62b27c699a/Base120_Canonical_Model_Registry.yaml"
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "bundle_path": "references/pyproject.toml",
+      "git_blob_sha1": "2d1a806520b7b2c9114283e56f291445f979caff",
+      "sha256": "90a90ae4a408c07ad1918d043687692e4c5ffd112561ce347715d0461f0fbbdb",
+      "url": "https://github.com/hummbl-io/base120/blob/8900d4d229da82974e9cca4dd1537d62b27c699a/pyproject.toml"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "bundle_path": "references/LICENSE",
+      "git_blob_sha1": "dd571a0e74ecc5886c185e88345a1a5548741d81",
+      "sha256": "cef0998f3e99b97f942ccf51e0eaf111b46e1fe27803a705ad09de455cc1bbbf",
+      "url": "https://github.com/hummbl-io/base120/blob/8900d4d229da82974e9cca4dd1537d62b27c699a/LICENSE"
+    },
+    {
+      "upstream_path": "LICENSE-MIT",
+      "bundle_path": "references/LICENSE-MIT",
+      "git_blob_sha1": "150fb2d3e59d80917e0300a26b643d09a024ea65",
+      "sha256": "5b43b997d9364d22f80248ca24933404e30c985e626b1f04e718a8edc561cea0",
+      "url": "https://github.com/hummbl-io/base120/blob/8900d4d229da82974e9cca4dd1537d62b27c699a/LICENSE-MIT"
+    },
+    {
+      "upstream_path": "LICENSE-APACHE",
+      "bundle_path": "references/LICENSE-APACHE",
+      "git_blob_sha1": "ba7d64cf2a99b09d01414bf2d6aec99c0b664853",
+      "sha256": "0085364ced96d0d13fd83c349114ffd0a8671a07d90cf7d8ac64d8f75b8ec4a0",
+      "url": "https://github.com/hummbl-io/base120/blob/8900d4d229da82974e9cca4dd1537d62b27c699a/LICENSE-APACHE"
+    },
+    {
+      "upstream_path": "NOTICE",
+      "bundle_path": "references/NOTICE",
+      "git_blob_sha1": "1f818cb28f16940b221eb8874171e74fc4cacf3b",
+      "sha256": "be9277a546fcb0a9f3e1129d081759475b2b311bfa2c9aaf92cfb23c5c2b7710",
+      "url": "https://github.com/hummbl-io/base120/blob/8900d4d229da82974e9cca4dd1537d62b27c699a/NOTICE"
+    }
+  ],
+  "historical_context": "Replaces the imported base120 skill 0.1.0; historical import provenance remains in hummbl.skill.json."
+}

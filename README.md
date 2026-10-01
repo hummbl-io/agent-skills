@@ -16,6 +16,23 @@ git clone https://github.com/hummbl-io/agent-skills.git ~/.claude/skills/hummbl
 git clone https://github.com/hummbl-io/agent-skills.git .cursor/skills/hummbl
 ```
 
+## Official Base120 skill
+
+[Base120 0.2.0](skills/base120/SKILL.md) includes all 120 reasoning operators,
+an offline snapshot of SDK 3.0.0, source hashes, full license texts, and a
+stdlib verifier. Use the entire `skills/base120/` directory so references stay
+alongside the instructions. Lookup does not require MCP or provider access.
+
+```bash
+python skills/base120/scripts/verify_reference.py
+```
+
+[Distribution provenance](skills/base120/distribution.json) pins the canonical
+skill commit and every copied file. Upstream source and maintenance repositories
+may require access; this public bundle includes the complete lookup reference.
+Skill and SDK versions are independent. Hash checks verify agreement with the
+bundled metadata and do not establish empirical reasoning effectiveness.
+
 ## Skills Catalog (1,283 Total)
 
 | Skill | Author / Upstream | License | Description |
@@ -110,7 +127,7 @@ git clone https://github.com/hummbl-io/agent-skills.git .cursor/skills/hummbl
 | [`aws-security`](skills/aws-security/SKILL.md) | HUMMBL | Apache-2.0 | Covers AWS security services and workflows — Security Hub V2 (OCSF) findings, connectors, ag... |
 | [`aws-serverless`](skills/aws-serverless/SKILL.md) | HUMMBL | Apache-2.0 | Builds, deploys, manages, debugs, configures, and optimizes serverless applications on AWS u... |
 | [`aws-storage`](skills/aws-storage/SKILL.md) | HUMMBL | Apache-2.0 | Selects, investigates, and compares AWS object, file, and block storage services, and answer... |
-| [`base120`](skills/base120/SKILL.md) | HUMMBL | Apache-2.0 | Look up and apply HUMMBL Base120 mental models via MCP server. |
+| [`base120`](skills/base120/SKILL.md) | HUMMBL | MIT OR Apache-2.0 | Official 0.2.0 skill: all 120 operators, a pinned offline reference, and optional stdlib verification. |
 | [`base120-compose`](skills/base120-compose/SKILL.md) | HUMMBL | Apache-2.0 | "The Synthesist. Composition transformation of Base120 (CO1-CO20). Build the whole the parts... |
 | [`base120-decompose`](skills/base120-decompose/SKILL.md) | HUMMBL | Apache-2.0 | "The Anatomist. Decomposition transformation of Base120 (DE1-DE20). Break wholes until each ... |
 | [`base120-infrastructure`](skills/base120-infrastructure/SKILL.md) | HUMMBL | Apache-2.0 | Infrastructure for adding --base120 cognitive structuring to skill scripts at fleet scale. P... |
