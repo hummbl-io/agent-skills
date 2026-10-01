@@ -33,6 +33,14 @@ may require access; this public bundle includes the complete lookup reference.
 Skill and SDK versions are independent. Hash checks verify agreement with the
 bundled metadata and do not establish empirical reasoning effectiveness.
 
+## HUMMBL implementation sources
+
+The [public source map](docs/public-sources.md) links HUMMBL's Python packages,
+embedded Rust and TypeScript tuple references, Lean formalization tree, and
+service-specific MCP adapters. Each entry includes its source and maturity
+boundary. It also identifies the Node Base120 technical canary and its release
+hold. The official skill above retains its own versioned offline snapshot.
+
 ## Skills Catalog (1,283 Total)
 
 | Skill | Author / Upstream | License | Description |
