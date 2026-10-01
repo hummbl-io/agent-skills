@@ -20,3 +20,11 @@ Skills prefixed with `aws-*` provide developer workflow harnesses for AWS SDK an
 All other skills, workflows, evaluation rubrics, and cognitive primitives are authored by HUMMBL.
 **License:** Apache License 2.0 (see [LICENSE](LICENSE)).
 **Copyright:** © 2026 HUMMBL, LLC. All rights reserved.
+
+### Base120 0.2.0
+
+The refreshed `skills/base120` bundle is available under **MIT OR Apache-2.0**.
+Its SDK source snapshot retains the upstream `LICENSE`, `LICENSE-MIT`,
+`LICENSE-APACHE`, and `NOTICE` in `skills/base120/references/`.
+`skills/base120/distribution.json` records the exact canonical skill revision
+and copied file hashes; `references/source.json` records the SDK source revision.

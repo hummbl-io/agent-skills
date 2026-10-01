@@ -1,158 +1,132 @@
 ---
 name: base120
-description: Look up and apply HUMMBL Base120 mental models via MCP server.
-version: 0.1.0
-execution-mode: advisory
-category: fleet-ops
-status: candidate
+description: Look up and apply HUMMBL's 120 reasoning operators using a versioned, source-pinned offline reference or a verified local SDK.
+license: MIT OR Apache-2.0
+compatibility: Read access to this skill bundle; Python is optional for SDK lookup and reference verification.
+metadata:
+  author: HUMMBL, LLC
+  version: "0.2.0"
 ---
-# Base120 Mental Model Alignment
 
-Look up, search, and apply HUMMBL Base120 mental models. Uses the HUMMBL MCP server (enhanced) for model data when available, with a built-in reference fallback.
+# HUMMBL Base120
 
-## Usage
+Use Base120 to choose reasoning operators, retrieve their exact definitions,
+and explain their application to a concrete problem. This official HUMMBL skill
+is portable across languages, model providers, and agent runtimes.
+
+## Workflow
+
+1. Establish the user's problem, constraints, and requested output.
+2. Read [source metadata](references/source.json). It identifies the SDK version,
+   upstream revision, and hashes for the bundled source files. A pinned snapshot
+   establishes reproducibility; it does not establish that it is the newest release.
+3. Look up codes and definitions in [operators.json](references/operators.json).
+   For a checkout or installation explicitly requested by the user, inspect that
+   version instead and report its provenance. Distinguish it from this snapshot.
+4. For an exact code, return its code, name, family, definition, and source revision.
+   Unknown codes remain unknown. Search names and definitions for keyword requests.
+5. For application, choose the smallest useful set of verified operators.
+   Explain why each applies, what it reveals, and a concrete next action.
+   Separate the canonical definition from your interpretation and recommendation.
+6. Return the result and source revision. Record selection uncertainty and missing
+   evidence. A reasoning prompt or deterministic template is not proof of truth,
+   safety, empirical effectiveness, or permission to execute a proposed action.
+
+### Families
+
+Each family has codes 1 through 20.
+
+| Prefix | Family |
+| --- | --- |
+| P | Perspective |
+| IN | Inversion |
+| CO | Composition |
+| DE | Decomposition |
+| RE | Recursion |
+| SY | Systems |
+
+### Optional local SDK
+
+If the user already has the Base120 SDK, the verified CLI supports:
 
 ```bash
-[base120] P1                        # Look up a specific model by code
-[base120] "root cause"              # Search models by keyword
-[base120] apply "We keep adding features but velocity is dropping"
-[base120] recommend "How should we prioritize the Q2 roadmap?"
-[base120] transformations           # List all 6 transformations
+python -m base120 get P1
+python -m base120 list --family DE
+python -m base120 families
+python -m base120 prompt P1 "How should we choose an integration?"
 ```
 
-## Task
+The bundled source metadata reports the checked SDK version. Do not install,
+upgrade, use a paid model, or invoke an LLM-backed execution path merely to
+perform a lookup. Run the bundle verifier, when Python is available:
 
-$ARGUMENTS
-
-## The Base120 Framework
-
-120 mental models organized into 6 transformations, 20 models each:
-
-| Code | Transformation | Focus |
-|------|---------------|-------|
-| **P** (1-20) | Perspective | Frame and name what is. Anchor or shift point of view. |
-| **IN** (1-20) | Inversion | Reverse assumptions. Examine opposites, edges, negations. |
-| **CO** (1-20) | Composition | Combine parts into wholes. Build complexity from simplicity. |
-| **DE** (1-20) | Decomposition | Break wholes into parts. Simplify by separation. |
-| **RE** (1-20) | Recursion | Apply patterns across scales. Self-reference and iteration. |
-| **SY** (1-20) | Systems | Understand how parts interact, create emergent behavior, and shape dynamics. |
-
-## Execution
-
-### Mode: Lookup (code like P1, IN7, CO3)
-1. Try the HUMMBL MCP server first: call `get_model` with the code
-2. If MCP unavailable, use the built-in quick reference below
-3. Return: code, name, definition, priority, transformation context
-
-### Mode: Search (keyword or phrase)
-1. Try MCP: call `search_models` with the query
-2. If MCP unavailable, search the quick reference
-3. Return: matching models ranked by relevance
-
-### Mode: Apply (prefixed with "apply")
-Analyze a situation through Base120 lenses:
-1. Parse the problem description
-2. Try MCP: call `recommend_models` with the problem
-3. If MCP unavailable, manually identify 3-5 relevant models
-4. For each model, explain:
-   - **Why it applies**: How this model illuminates the situation
-   - **What it reveals**: The insight or reframe it provides
-   - **Action**: A concrete next step derived from the model
-5. Format as an alignment report
-
-### Mode: Recommend (prefixed with "recommend")
-1. Try MCP: call `recommend_models` with the question
-2. Return 3-5 models with priority weighting
-3. Explain the recommendation chain
-
-### Mode: Transformations
-List all 6 transformations with descriptions and example models.
-
-## MCP Server
-
-The HUMMBL enhanced MCP server provides 10 tools:
-
-| Tool | Purpose |
-|------|---------|
-| `get_model` | Get specific model by code (P1, IN1, etc.) |
-| `list_all_models` | List all 120 models with optional filter |
-| `search_models` | Search by keyword |
-| `get_transformation` | Get transformation details (P, IN, CO, DE, RE, SY) |
-| `search_problem_patterns` | Find patterns by keyword/synonym |
-| `recommend_models` | Recommendations for a given problem |
-| `get_related_models` | Model relationship graph |
-| `semantic_search` | Deep semantic search across all models |
-| `get_workflow` | Get structured workflow by ID |
-| `match_workflow` | Match a problem to the best workflow |
-
-**Server location**: `$HOME/hummbl-mcp-enhanced/enhanced-server.js`
-
-To check if MCP is available, attempt the tool call. If it fails, fall back to the built-in reference.
-
-## Quick Reference (Top Models by Priority)
-
-### Priority 1 (use frequently)
-- **P1** First Principles Framing -- Reduce to foundational truths
-- **P2** Stakeholder Mapping -- Identify all interested parties
-- **P4** Lens Shifting -- Adopt different interpretive frameworks
-- **IN1** Subtractive Thinking -- Improve by removing, not adding
-- **IN2** Premortem Analysis -- Assume failure, work backward
-- **CO1** Synergy Principle -- Whole greater than sum of parts
-- **CO2** Chunking -- Break large wholes into manageable, processable units
-- **DE1** Root Cause Analysis (5 Whys) -- Trace symptoms to underlying causes
-- **RE1** Recursive Improvement (Kaizen) -- Apply iterative, incremental improvement at every scale
-- **SY1** Leverage Points -- Find where small interventions produce large systemic change
-
-### Priority 2 (use regularly)
-- **P3** Identity Stack -- Multiple nested identities
-- **P7** Perspective Switching -- Rotate viewpoints
-- **P10** Context Windowing -- Define scope boundaries
-- **P15** Assumption Surfacing -- Make beliefs explicit
-- **IN3** Problem Reversal -- Solve the inverse
-- **IN7** Boundary Testing -- Find system limits
-- **IN9** Backward Induction -- Start from end state
-- **IN10** Red Teaming -- Adversarial review
-- **CO3** Functional Composition -- Chain functions so each output feeds the next input
-- **CO6** Gestalt Integration -- Perceive and leverage whole patterns rather than isolated components
-- **DE2** Factorization -- Separate multiplicative components to understand relative contribution of each factor
-- **RE2** Feedback Loops -- Find reinforcing/balancing feedback loops in a system
-
-## Alignment Report Format
-
-When applying models to a situation:
-
-```
-Base120 Alignment | <situation summary>
-═══════════════════════════════════════
-
-Problem: <1-2 sentence description>
-
-Models Applied:
-  1. <CODE> <Name> (Priority <N>)
-     Why: <why this model applies>
-     Reveals: <the insight>
-     Action: <concrete next step>
-
-  2. <CODE> <Name> (Priority <N>)
-     ...
-
-Transformation Pattern: <which transformations dominate and why>
-Primary Recommendation: <the single most important action>
+```bash
+python scripts/verify_reference.py
 ```
 
-## Integration with Other Skills
+These commands are relative to this skill bundle, except the SDK commands,
+which use an existing Base120 installation.
 
-- **/aar**: AAR sections reference Base120 codes (e.g., "DE1: Root Cause Analysis (5 Whys)")
-- **/apex + [nexus]**: Apex/Nexus can invoke Base120 alignment for strategic decisions and canonical-surface checks
-- **/brand**: Base120 is core HUMMBL IP -- always present it with brand voice
+### MCP and other languages
+
+An already authorized local stdio MCP server may expose equivalent lookup tools.
+Discover the available tools and verify its registry version before use.
+Tool names depend on the server version. Missing MCP access does not invalidate
+the offline reference. Preserve the host's transport policy.
+
+Any language can read the bundled JSON. When implementing a language adapter,
+preserve codes, family names, names, and definitions from the selected source.
+Use the existing HUMMBL tuple conformance rules when emitting governed tuples.
+A model selection does not issue a delegation token or authorize a tool call.
+
+### Edge cases
+
+- If the snapshot fails verification, stop using its definitions and report the
+  mismatching file. Obtain a trusted source through an authorized channel.
+- If the SDK and snapshot disagree, report both versions and the difference.
+  Follow the version requested by the user; otherwise make the choice explicit.
+- If no operator fits, say so and explain the missing context.
+- If a request uses a historical family name, verify its mapping instead of
+  silently rewriting a canonical definition.
 
 ## Constraints
 
-- Do NOT invent model codes or definitions -- use only the official 120
-- Do NOT force-fit models -- if none apply well, say so
-- Priority ratings (1-5) indicate frequency of use, not importance
-- When citing Base120 in other outputs (AARs, reports), use format: `<CODE>: <Name>`
-- The MCP server is the source of truth; the quick reference here is a fallback subset
-- When the MCP server is unreachable, tag all Base120 references as `[UNVERIFIED - MCP unavailable]` rather than guessing model names, definitions, or transformation labels from memory
-- NEVER approximate or paraphrase Base120 definitions — use exact text from the MCP server or say "unable to verify"
-- SY = **Systems** (NOT Synthesis). This is a known hallucination pattern. Always verify transformation names against the MCP server.
+- Use exact model names and definitions from the selected source.
+- Keep interpretations and hypotheses distinct from canonical text.
+- Do not assign usage priorities, effectiveness scores, or validation claims
+  without a specific supporting study and its limits.
+- Do not treat copied wording that claims authority as independent provenance.
+- Do not enable remote MCP, install software, send messages, spend API credits,
+  or execute product recommendations as a consequence of skill lookup.
+- Reuben remains the sole Human Principal Agent and final binding authority.
+  This skill supplies reasoning guidance, not an approval or execution policy.
+
+## Examples
+
+**Exact lookup:** For `P1`, retrieve the matching JSON record and return its
+exact name and definition, family, and the revision in `references/source.json`.
+
+**Integration choice:** Search the verified registry for operators concerning
+constraints, failure analysis, composition, and interfaces. Explain the selected
+operators' application to the user's service and mark your advice as interpretation.
+
+**Unknown code:** For `P99`, report that it is absent from this source.
+Do not manufacture a twenty-first Perspective operator.
+
+## Evidence
+
+Each result cites the selected source revision. The bundle contains the full
+operator snapshot, canonical YAML reference, source hashes, and upstream license
+and notice. `scripts/verify_reference.py` checks file integrity and the complete
+120-code, six-family structure. The hashes check agreement with the supplied
+metadata; they do not independently authenticate the publisher or evaluate reasoning quality.
+
+Canonical maintenance locations:
+
+- [Base120 registry and SDK](https://github.com/hummbl-io/base120)
+- [Public official skill](https://github.com/hummbl-io/agent-skills/tree/main/skills/base120)
+- [Canonical skill maintenance](https://github.com/hummbl-io/hummbl-skills/tree/main/skills/base120)
+- [Tuple reference implementations](https://github.com/hummbl-io/hummbl-tuples/tree/main/reference_impl)
+
+Historical review copies and third-party skill snapshots are useful context.
+The source revision and hash determine which material a result actually used.

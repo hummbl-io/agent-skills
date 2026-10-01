@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=84.0.0,<85.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "base120"
+version = "3.0.0"
+description = "120 callable reasoning operators for structured thinking — stdlib-only, dual-path (deterministic + LLM), tuple-native"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "HUMMBL, LLC", email = "dev@hummbl.io" }]
+keywords = ["mental-models", "reasoning", "structured-thinking", "cognitive-operators", "governance", "ai", "agents", "mcp", "krineia", "base120"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://hummbl.io"
+Repository = "https://github.com/hummbl-io/base120"
+Documentation = "https://github.com/hummbl-io/base120/tree/main/docs"
+Issues = "https://github.com/hummbl-io/base120/issues"
+
+[project.optional-dependencies]
+test = [
+  "pytest>=9.1.1,<10.0",
+  "ruff>=0.16.7,<1.0",
+]
+
+[project.scripts]
+base120 = "base120.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["base120*"]
+
+[tool.setuptools.package-data]
+base120 = ["data/*.json"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
