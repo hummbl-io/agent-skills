@@ -24,7 +24,7 @@ Generate a complete Service Agreement (MSA or standalone) for client engagements
 
 | Field | Example |
 |-------|---------|
-| Provider (your company) | HUMMBL, LLC |
+| Provider (your company) | HUMMBL |
 | Client name | Acme Corp |
 | Services description | AI governance consulting and assessment services |
 | Fee structure | $3,500/month retainer or $7,500 project flat fee |

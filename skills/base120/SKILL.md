@@ -4,7 +4,7 @@ description: Look up and apply HUMMBL's 120 reasoning operators using a versione
 license: MIT OR Apache-2.0
 compatibility: Read access to this skill bundle; Python is optional for SDK lookup and reference verification.
 metadata:
-  author: HUMMBL, LLC
+  author: HUMMBL
   version: "0.2.0"
 ---
 

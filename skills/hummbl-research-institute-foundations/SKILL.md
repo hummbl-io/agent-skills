@@ -1,6 +1,6 @@
 ---
 name: hummbl-research-institute-foundations
-description: Session-start context grounding for HUMMBL, LLC. Scans all hummbl-io repos, research coverage, strategy posture, and cognition state into one briefing.
+description: Session-start context grounding for HUMMBL. Scans all hummbl-io repos, research coverage, strategy posture, and cognition state into one briefing.
 version: 0.1.0
 execution-mode: side_effecting
 category: governance-compliance
@@ -20,9 +20,9 @@ status: candidate
 !`find ~/PROJECTS -maxdepth 3 -name "*.md" -path "*/research/*" 2>/dev/null | wc -l` total research markdown files
 !`git -C ~/PROJECTS/axis log --oneline -3 2>/dev/null` axis recent commits
 
-# HUMMBL, LLC Foundations
+# HUMMBL Foundations
 
-Session-start context grounding for all work across the HUMMBL, LLC ecosystem. Injects live state from all hummbl-io repos, the axis knowledge base, research coverage, strategy posture, and cognition systems into one briefing. Run at the start of every session before doing any HUMMBL-related work.
+Session-start context grounding for all work across the HUMMBL ecosystem. Injects live state from all hummbl-io repos, the axis knowledge base, research coverage, strategy posture, and cognition systems into one briefing. Run at the start of every session before doing any HUMMBL-related work.
 
 **This skill is designed to be embedded into every hummbl-io repo.** It grounds the agent in the full institute landscape, not just the current repo.
 
@@ -82,7 +82,7 @@ Message: [hummbl-research-institute-foundations] Session grounded. <N> repos, <N
 ## Output Format
 
 ```
-HUMMBL, LLC Foundations | Session Start
+HUMMBL Foundations | Session Start
 â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 REPOS: <N> hummbl-io repos | <N> with AGENTS.md | <N> git-active
 RESEARCH: <N> axis docs | <N> hummbl-research docs | <N> total research MDs

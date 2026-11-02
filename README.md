@@ -605,7 +605,7 @@ hold. The official skill above retains its own versioned offline snapshot.
 | [`hummbl-kernel`](skills/hummbl-kernel/SKILL.md) | HUMMBL | Apache-2.0 | HUMMBL orchestration kernel — lightweight workflow execution with security, compliance, and ... |
 | [`hummbl-lattice`](skills/hummbl-lattice/SKILL.md) | HUMMBL | Apache-2.0 | Domain-specific reasoning operator lattices for the Domain120 framework |
 | [`hummbl-lint-config`](skills/hummbl-lint-config/SKILL.md) | HUMMBL | Apache-2.0 | Shared ruff lint configuration for the HUMMBL fleet |
-| [`hummbl-research-institute-foundations`](skills/hummbl-research-institute-foundations/SKILL.md) | HUMMBL | Apache-2.0 | Session-start context grounding for HUMMBL, LLC. Scans all hummbl-io repos, research coverag... |
+| [`hummbl-research-institute-foundations`](skills/hummbl-research-institute-foundations/SKILL.md) | HUMMBL | Apache-2.0 | Session-start context grounding for HUMMBL. Scans all hummbl-io repos, research coverag... |
 | [`hummbl-rubric-templates`](skills/hummbl-rubric-templates/SKILL.md) | HUMMBL | Apache-2.0 | HUMMBL Standard Evaluation Rubric Templates & Automated Validators |
 | [`hummbl-taxonomy`](skills/hummbl-taxonomy/SKILL.md) | HUMMBL | Apache-2.0 | HUMMBL Governed Intelligence Tier Taxonomy & Classifier |
 | [`hummbl-tuples`](skills/hummbl-tuples/SKILL.md) | HUMMBL | Apache-2.0 | HUMMBL Typed Tuples governance model |
@@ -1333,7 +1333,7 @@ hold. The official skill above retains its own versioned offline snapshot.
 
 This repository provides a unified catalog of agent skills released under permissive open-source licenses:
 
-- **HUMMBL Original Skills (1,267 skills)**: Licensed under [Apache-2.0](LICENSE) © 2026 HUMMBL, LLC.
+- **HUMMBL Original Skills (1,267 skills)**: Licensed under [Apache-2.0](LICENSE) © 2026 Reuben Bowlby.
 - **NVIDIA Corporation Tooling & SDK Guides (15 skills)**: Authored by NVIDIA teams (CUDA-Q, Holoscan, Nemotron) under CC-BY-4.0 / Apache-2.0 © NVIDIA Corporation.
 - **Community & Ecosystem Harnesses**: Retain original author and license metadata in their respective `SKILL.md` frontmatter.
 

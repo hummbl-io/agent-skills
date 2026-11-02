@@ -22,7 +22,7 @@ Generate a complete employment offer letter for a new hire.
 
 | Field | Example |
 |-------|---------|
-| Company name | HUMMBL, LLC |
+| Company name | HUMMBL |
 | Candidate name | Jane Smith |
 | Title | Senior AI Engineer |
 | Employment type | Full-time, exempt |

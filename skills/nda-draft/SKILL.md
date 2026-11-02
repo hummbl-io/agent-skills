@@ -21,7 +21,7 @@ Generate a complete Non-Disclosure Agreement.
 
 | Field | Example |
 |-------|---------|
-| Disclosing party | HUMMBL, LLC |
+| Disclosing party | HUMMBL |
 | Receiving party | Acme Corp / Jane Smith |
 | Purpose | Evaluation of potential consulting engagement |
 | Type | Mutual (both share) or One-Way (one discloses) |

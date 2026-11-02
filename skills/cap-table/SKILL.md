@@ -25,7 +25,7 @@ Generate or update a capitalization table for an early-stage company.
 
 | Field | Example |
 |-------|---------|
-| Company | HUMMBL, LLC |
+| Company | HUMMBL |
 | Founders | Reuben Bowlby — 100% |
 | Existing investors | None / Seed round: $500K at $5M pre-money |
 | Option pool | 10% fully-diluted (before or after round) |
