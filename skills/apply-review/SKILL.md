@@ -52,7 +52,7 @@ Read in this order; conflicts resolve to operator-direct chat > most-recent memo
 2. `$RUNTIME_MEM/project_pre_hummbl_arc.md` — pre-HUMMBL timeline with Drive file IDs
 3. `$RUNTIME_MEM/feedback_hallucinated_employment_history.md` — the rule that no pre-2024 CS/eng roles exist
 4. `$RUNTIME_MEM/user_profile.md` — machines, devices, current role context
-5. `$RUNTIME_MEM/project_hummbl_legal.md` — HUMMBL LLC GA incorporation
+5. `$RUNTIME_MEM/project_hummbl_legal.md` — HUMMBL GA incorporation
 6. `$RUNTIME_MEM/feedback_hummbl_governance_namespace.md` — Founder Mode app vs internal ops platform distinction
 7. `$RUNTIME_MEM/feedback_agent_grounding_protocol.md` — operator-state context
 

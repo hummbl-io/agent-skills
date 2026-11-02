@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
 license-files = ["LICENSE", "NOTICE"]
-authors = [{ name = "HUMMBL, LLC", email = "dev@hummbl.io" }]
+authors = [{ name = "HUMMBL", email = "dev@hummbl.io" }]
 keywords = ["mental-models", "reasoning", "structured-thinking", "cognitive-operators", "governance", "ai", "agents", "mcp", "krineia", "base120"]
 classifiers = [
     "Development Status :: 4 - Beta",

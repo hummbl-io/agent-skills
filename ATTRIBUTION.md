@@ -16,10 +16,10 @@ The following skills incorporate documentation and SDK reference material author
 Skills prefixed with `aws-*` provide developer workflow harnesses for AWS SDK and services under Apache-2.0.
 **Copyright:** © Amazon.com, Inc. or its affiliates. All rights reserved.
 
-## HUMMBL, LLC
+## HUMMBL
 All other skills, workflows, evaluation rubrics, and cognitive primitives are authored by HUMMBL.
 **License:** Apache License 2.0 (see [LICENSE](LICENSE)).
-**Copyright:** © 2026 HUMMBL, LLC. All rights reserved.
+**Copyright:** © 2026 Reuben Bowlby. All rights reserved.
 
 ### Base120 0.2.0
 

@@ -25,7 +25,7 @@ Generate a Privacy Policy for a SaaS product, website, or mobile app.
 
 | Field | Example |
 |-------|---------|
-| Company name | HUMMBL, LLC |
+| Company name | HUMMBL |
 | Product/website | hummbl.io — AI governance platform |
 | Data collected | Email, company name, usage data, payment info |
 | Third-party services | Stripe (payments), Google Analytics, Cloudflare |

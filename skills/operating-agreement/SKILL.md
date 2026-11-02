@@ -23,7 +23,7 @@ Generate a complete, attorney-ready LLC Operating Agreement.
 
 | Field | Example | Required |
 |-------|---------|----------|
-| Entity name | HUMMBL, LLC | Yes |
+| Entity name | HUMMBL | Yes |
 | Member name(s) | Reuben P. Bowlby | Yes |
 | State of formation | Georgia | Yes |
 | Principal address | 526 Briarhill Ln NE, Atlanta GA 30324 | Yes |
@@ -70,8 +70,8 @@ Generate a complete, attorney-ready LLC Operating Agreement.
 
 ## Known HUMMBL Entity
 
-If generating for HUMMBL, LLC, pre-fill from memory:
-- Entity: HUMMBL, LLC
+If generating for HUMMBL, pre-fill from memory:
+- Entity: HUMMBL
 - Member: Reuben P. Bowlby
 - State: Georgia
 - EIN: 41-5361118

@@ -22,7 +22,7 @@ Generate an Independent Contractor Agreement (ICA) for hiring a freelancer or co
 
 | Field | Example |
 |-------|---------|
-| Company name | HUMMBL, LLC |
+| Company name | HUMMBL |
 | Company address | 526 Briarhill Ln NE, Atlanta GA 30324 |
 | Contractor name | Jane Smith |
 | Contractor address | [address] |

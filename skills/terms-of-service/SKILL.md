@@ -24,7 +24,7 @@ Generate complete Terms of Service for a SaaS product, website, or marketplace.
 
 | Field | Example |
 |-------|---------|
-| Company name | HUMMBL, LLC |
+| Company name | HUMMBL |
 | Product name | HUMMBL AI Governance Platform |
 | Product type | SaaS (subscription) / Website / Marketplace |
 | Core functionality | AI governance assessment, monitoring, and reporting |

@@ -25,7 +25,7 @@ Generate a complete 3-statement financial model for investor presentations or op
 
 | Field | Example |
 |-------|---------|
-| Company | HUMMBL, LLC |
+| Company | HUMMBL |
 | Business model | SaaS + consulting services |
 | Revenue streams | Platform subscription ($3,500/mo), assessments ($7,500 each) |
 | Key growth driver | # of clients, # of assessments per quarter |

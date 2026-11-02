@@ -2,10 +2,10 @@
 NOTICE file for base120
 ==============================================================================
 
-This product includes software developed by HUMMBL, LLC
+This product includes software developed by HUMMBL
 (https://hummbl.io).
 
-Copyright 2024-2026 HUMMBL, LLC. All rights reserved.
+Copyright 2024-2026 HUMMBL. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -49,7 +49,7 @@ IMPORTANT: Base120 Proprietary Content Notice
 ------------------------------------------------------------------------------
 
 The Base120 mental model DEFINITIONS, NAMES, CODES, and TRANSFORMATION
-FRAMEWORK are proprietary intellectual property of HUMMBL, LLC.
+FRAMEWORK are proprietary intellectual property of HUMMBL.
 
 While the SOFTWARE (Python package, MCP server, CLI) is Apache-2.0
 licensed, the structured mental model corpus itself
@@ -57,16 +57,16 @@ licensed, the structured mental model corpus itself
 is protected by copyright and trade secret.
 
 Commercial use of the Base120 corpus beyond the Apache-2.0 software
-license requires a separate commercial license from HUMMBL, LLC.
+license requires a separate commercial license from HUMMBL.
 
 ------------------------------------------------------------------------------
 Trademarks
 ------------------------------------------------------------------------------
 
 HUMMBL™, BASE120™, KRINEIA™, BKI™, GOVERNANCE TUPLE™
-are trademarks of HUMMBL, LLC.
+are trademarks of HUMMBL.
 
-VERUM™ is a legacy trademark of HUMMBL, LLC, pending deprecation.
+VERUM™ is a legacy trademark of HUMMBL, pending deprecation.
 The current governance primitive name is KRINEIA; VERUM is retained
 here for historical trademark notice only and is not used in new code
 or documentation.
